@@ -13,7 +13,7 @@ Hoping, I can understand about for thesemoduls moduls :
 * Higher Order Functions, Timers, and Closures & exercises
 * Document Object Model & exercises
 * Events and LocalStorage & exercises
-* JavaScript Iterators & exercises**
+* JavaScript Iterators & exercises
 **
 3.Rithm School Intermediate JavaScript Part II
 Still on the way to elarn more for this part
