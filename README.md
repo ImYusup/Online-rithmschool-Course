@@ -2,8 +2,9 @@
 This repository is my place study in free online course [link] (https://www.rithmschool.com/courses)
 and My exercises online on [link] (https://repl.it/@PapahArsyad)
  
-Hoping, I can understand about for thesemoduls moduls :
-**1. JavaScript fundamentals 
+Hoping, I can understand about for thesemoduls moduls : 
+**
+1. JavaScript fundamentals 
 * JavaScript Objects & exercises
 * JavaScript Function & exercises
 2. Rithm School Intermediate JavaScript Part I
@@ -13,6 +14,6 @@ Hoping, I can understand about for thesemoduls moduls :
 * Document Object Model & exercises
 * Events and LocalStorage & exercises
 * JavaScript Iterators & exercises**
-
+**
 3.Rithm School Intermediate JavaScript Part II
 Still on the way to elarn more for this part
