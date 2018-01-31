@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+    </section>
+    <div class="footer">
+    </div>
+    
+    <script>
+      /*Write the code necessary to do the following:
+
+Select the section with an id of container without using querySelector.
+Select the section with an id of container using querySelector.
+Select all of the list items with a class of "second".
+Select a list item with a class of third, but only the list item inside of the ol tag.
+Give the section with an id of container the text "Hello!".
+Add the class main to the div with a class of footer.
+Remove the class main on the div with a class of footer.
+Create a new li element.
+Give the li the text "four".
+Append the li to the ul element.
+Loop over all of the li inside the ol tag and give them a background color of "green".
+Remove the div with a class of footer*/
+
+//1. using getElementById
+console.log('//1. using getElementById')
+var container = document.getElementById('container');
+console.log(container.childNodes);
+console.log(container.childNodes.length); //5
+console.log(container.children);
+console.log(container.children.length); //2
+
+console.log('//2. using querySelector');
+//2. using querySelector
+var link = document.querySelector('#container');
+console.log(link.parentElement); //body bla bla
+console.log(link.previousElementSibling); //div bla bla
+console.log(link.previousSibling); //text
+console.log(link.nextSibling); //text
+console.log(link.nextElementSibling); //div bla bla
+
+console.log('//3. using getElementsByClassName');
+//3. using class 'second'
+var kelas = document.getElementsByClassName('second');
+//or document.querySelectorAll('.second')
+console.log(kelas);
+
+console.log('//4. using getElementsByClassName');
+var tiga = document.getElementsByClassName('ol. third');
+console.log(tiga);
+
+console.log('//5. using id container to say hello!');
+/*var hallo = document.querySelector('#container');
+console.log(hallo.innerText = 'Hello my boy Arsyad Al Khawarizmi Priadi!!!');
+//var sapa = document.querySelectorAll('div');
+//sapa.style.color = 'blue';
+/*for (var i=0; i<sapa.length; i++){
+  sapa[i].style['background-color'] = 'red';
+}*/
+
+console.log('//6. add class of footer'); 
+//6. add class of footer' 
+var tambah = document.querySelector('.footer'); //or elementsByTagName ('div') [1]
+// other way --> 
+//tambah.className += 'main';
+//console.log(tambah.classList);
+console.log(tambah.classList); //return footer class before
+console.log(tambah.classList.add('main')); //add new classList
+console.log(tambah.classList); //return footer class after
+
+console.log('//7. remove class of footer');
+//7. remove class of footer
+var minus = document.querySelector('.footer');
+console.log(minus.classList); //return footer class before
+console.log(minus.classList.remove('main')); //remove main class
+console.log(minus.classList); //return footer class before
+
+console.log('//8 create new li elements');
+//8 create new li elements
+var newLi = document.createElement('li');
+console.log(newLi);
+
+console.log('//9 add li four');
+//9 add li four
+newLi.innerText = 'four';
+
+console.log('//10 appendChild to new element');
+//10 appendChild to new element
+var untukLi = document.querySelector('ul');
+untukLi.appendChild(newLi);
+
+console.log('//11 looping color to lu inside ol');
+//11 loop untuk background-color of green to lu inside the ol
+var warna = document.querySelectorAll('ol li');
+for (var i=0; i<warna.length; i++){
+  warna[i].style['background-color'] = 'green';
+}
+console.log(warna);
+
+console.log('//12 remove footer class');
+//12 remove footer class
+//my own way
+//var deleteFot = document.getElementsByTagName ('div')[1];
+var deleteFot = document.querySelector('.footer');
+console.log(deleteFot.classList);
+console.log(deleteFot.classList.remove('footer'));
+console.log(deleteFot.classList);
+      
+      
+    </script>
+    
+</body>
+</html>

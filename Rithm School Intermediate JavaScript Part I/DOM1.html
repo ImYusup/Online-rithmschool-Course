@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- make sure for now that your script tag is in the head -->
+    <title>Document</title>
+</head>
+<body id= "container">
+    <div class="hello">
+      <b>Hello World</b>
+    </div>
+    <div class="hello">
+      <b>Hello Everyone!</b>
+    </div>
+    <a href="#">This link goes nowhere!</a>
+    <button>Click me!</button>
+  
+	<script>
+//Modify properties element pada DOM -1
+  /*var firstDiv = document.getElementsByTagName("div")[0];
+  console.log('--replace1 hello word on HTML--');  
+  console.log(firstDiv.innerHTML = "Just changed!");
+    //Modify properties CSS element pada DOM -1
+  firstDiv.style.color ='red'; 
+  firstDiv.style.background= 'teal'; 
+  firstDiv.style['background-color'] = 'purple';  
+     
+    //Access/Modify attributes on elements, 
+    //Using getAttributes or setAttributes
+  console.log('--Modify attributes on elements--');  
+  var body = document.getElementById('container');
+  console.log(body.getAttribute('id')); //container
+  console.log(body.setAttribute('id', 'new_container')); //add, should be like!
+  console.log(body.getAttribute('id')); //container & new_container
+   
+    //Modify properties element pada DOM -2
+  var secondDiv = document.getElementsByTagName('div')[1];
+  console.log('--replace2 hello word on text--');  
+  console.log(secondDiv.innerText = 'Just changed again!');
+    //Access/Modify attributes on class
+    //add/remove using classList
+  console.log('--Modify class--')
+  console.log(secondDiv.classList); //hello 
+  console.log(secondDiv.classList.add('another_class'));  
+  console.log(secondDiv.classList); //hello & another_class  
+  console.log(secondDiv.classList.remove('hello'));
+  console.log(secondDiv.classList); //another_class  */
+  
+     //Traversing the DOM using ID
+ /* var ubahId = document.getElementById('container');
+  //var ubahId = document.getElementsByClassName('hello')[1];
+
+  //console.log(ubahId.childNodes);  //this contains all of the nodes (including text nodes) that are children
+  console.log(ubahId.childNodes.length); //10
+  console.log(ubahId.children);
+  console.log(ubahId.children.length);  //5 
+      
+    //Traversing the DOM using ID using query selector
+   var ubahQuer = document.querySelector("a");
+  console.log(ubahQuer.parentElement);  
+  console.log(ubahQuer.previousElementSibling);  
+  console.log(ubahQuer.previousSibling);
+  console.log(ubahQuer.nextSibling);
+  console.log(ubahQuer.nextElementSibling);*/
+  
+  //var newDiv = document.createElement('div');
+  //console.log(newDiv);
+
+  //Appending elements
+  var button = document.createElement('button');
+console.log(button.innerText = "I am a button created with JavaScript!");
+
+  var container = document.getElementById('container');
+  console.log(container.appendChild(button));
+  
+  //Remove elements
+  var linkToRemove = document.querySelector('a');
+var container = document.getElementById("container");
+console.log(container.removeChild(linkToRemove));
+  
+  //Changing multiple elements
+  var divs = document.querySelectorAll('div');
+//divs.style['background-color'] = 'red'; //this will not work!
+  //this will work using loop!
+  for (var i=0; i<divs.length; i++){
+divs[i].style['background-color'] = 'red';
+  }
+
+	</script>
+</body>
+</html>
