@@ -1,7 +1,6 @@
 # Online-rithmschool-Course
-This repository is my place study in free online course [link] (https://www.rithmschool.com/courses)
-and My exercises online on [link] (https://repl.it/@PapahArsyad)
- 
+This repository is my place study in free online course [link (https://www.rithmschool.com/courses]
+
 Hoping, I can understand about for these moduls : 
 
 1. **JavaScript fundamentals** 
